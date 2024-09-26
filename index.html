@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Emerson | Linktree</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Kop | Linktree</title>
     <!-- Favicon -->
-    <link rel="icon" href="https://avatars0.githubusercontent.com/u/43749971" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/16388408?v=4"
+      type="image/x-icon"
+    />
     <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Retain style.css for custom styles and animations -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body
+    class="bg-gradient-radial from-blue-900 via-blue-800 to-blue-900 font-karla opacity-0 animate-transitionAnimation relative min-h-screen m-0 p-0"
+  >
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
       <div id="stars1"></div>
@@ -21,51 +33,65 @@
     </section>
     <!-- End of Parallax Pixel Background Animation -->
 
-    <a id="profilePicture" href="#popup">
-      <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
-    </a>
+    <img
+      src="https://avatars.githubusercontent.com/u/16388408?v=4"
+      alt="Profile Picture"
+      class="w-24 h-24 rounded-full mx-auto my-10"
+    />
 
-    <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="https://avatars0.githubusercontent.com/u/43749971" target="_blank">
-            <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
-          </a>
-        </div>
-        <div class="popup-quote">
-          But... the sensation that I've lost something lingers for a longtime after I wake up.
-        </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
-      </div>
+    <div
+      id="userName"
+      class="text-white text-base font-bold text-center w-full"
+    >
+      Marcelo "Mark" Kopmann
     </div>
 
-    <div id="userName">
-      @johnggli
-    </div>
-
-    <div id="links">
-      <a class="link" href="https://github.com/johnggli" target="_blank">
+    <div
+      id="links"
+      class="max-w-3xl mx-auto my-7 grid grid-cols-1 md:grid-cols-2 gap-4 w-full"
+    >
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://github.com/markkop"
+        target="_blank"
+      >
         <i class="fab fa-github">&nbsp;</i>Github
       </a>
-      <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://www.linkedin.com/in/marcelo-kopmann"
+        target="_blank"
+      >
         <i class="fab fa-linkedin">&nbsp;</i>Linkedin
       </a>
-      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
-        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://bsky.app/profile/markkop.dev"
+        target="_blank"
+      >
+        <i class="fab fa-bluesky">&nbsp;</i>Bluesky
       </a>
-      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
-        <i class="fab fa-instagram">&nbsp;</i>Instagram
-      </a>
-      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://twitter.com/heymarkkop"
+        target="_blank"
+      >
         <i class="fab fa-twitter">&nbsp;</i>Twitter
       </a>
-      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
-        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://dev.to/heymarkkop"
+        target="_blank"
+      >
+        <i class="fab fa-dev">&nbsp;</i>Blog
       </a>
-    </div>
-
-    <div id="hashtag">
-      #BeHappy❤
+      <a
+        class="link bg-transparent text-white border-2 border-white rounded-lg text-base text-center block p-2.5 no-underline hover:bg-white hover:text-blue-900 active:bg-white active:text-blue-900 transition-colors"
+        href="https://bsky.app/profile/markkop.dev"
+        target="_blank"
+      >
+        <i class="fas fa-folder-open">&nbsp;</i>Talks
+      </a>
     </div>
   </body>
 </html>
