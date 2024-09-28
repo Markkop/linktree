@@ -117,18 +117,31 @@
       const starsContainer = document.getElementById("starsContainer");
 
       function toggleQRMode() {
-        content.classList.toggle("hidden");
-        qrCode.classList.toggle("hidden");
-        starsContainer.classList.toggle("hidden");
+        if (!qrCode.classList.contains("active")) {
+          // Transition to QR mode
+          qrCode.style.display = "flex";
+          setTimeout(() => {
+            content.classList.add("inactive");
+            starsContainer.classList.add("inactive");
+            qrCode.classList.add("active");
+          }, 50);
 
-        if (qrCode.classList.contains("hidden")) {
-          history.pushState(null, "", window.location.pathname);
-        } else {
           history.pushState(
             null,
             "",
             window.location.pathname + "?mode=qrcode"
           );
+        } else {
+          // Transition to normal mode
+          qrCode.classList.remove("active");
+          content.classList.remove("inactive");
+          starsContainer.classList.remove("inactive");
+
+          setTimeout(() => {
+            qrCode.style.display = "none";
+          }, 300); // Match this delay with the CSS transition duration
+
+          history.pushState(null, "", window.location.pathname);
         }
       }
 
@@ -138,8 +151,11 @@
       // Check URL params on page load
       window.addEventListener("load", () => {
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get("mode") === "qr") {
-          toggleQRMode();
+        if (urlParams.get("mode") === "qrcode") {
+          qrCode.style.display = "flex";
+          content.classList.add("inactive");
+          starsContainer.classList.add("inactive");
+          qrCode.classList.add("active");
         }
       });
     </script>
