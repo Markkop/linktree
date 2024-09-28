@@ -336,7 +336,7 @@ Keep this here to know the signature of the stars.css */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #f8f2f1; /* Updated background color */
 }
 
 #qrCode.active {
