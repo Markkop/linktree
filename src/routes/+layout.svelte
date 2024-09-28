@@ -34,6 +34,12 @@
     background-size: cover;
     position: relative;
     z-index: 0;
+    color-scheme: dark;
+    color: #ffffff;
+  }
+
+  :global(html) {
+    color-scheme: dark;
   }
 
   .animated-background {
