@@ -51,6 +51,9 @@
     <a class="link" href="https://twitter.com/heymarkkop" target="_blank">
       <i class="fab fa-twitter">&nbsp;</i>Twitter
     </a>
+    <a class="link" href="https://www.instagram.com/markkop.dev" target="_blank">
+      <i class="fab fa-instagram">&nbsp;</i>Instagram
+    </a>
     <a class="link" href="https://dev.to/heymarkkop" target="_blank">
       <i class="fab fa-dev">&nbsp;</i>Blog
     </a>
