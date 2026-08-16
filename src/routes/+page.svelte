@@ -45,12 +45,6 @@
     <a class="link" href="https://www.linkedin.com/in/marcelo-kopmann" target="_blank">
       <i class="fab fa-linkedin">&nbsp;</i>Linkedin
     </a>
-    <a class="link" href="https://bsky.app/profile/markkop.dev" target="_blank">
-      <i class="fab fa-bluesky">&nbsp;</i>Bluesky
-    </a>
-    <a class="link" href="https://twitter.com/heymarkkop" target="_blank">
-      <i class="fab fa-twitter">&nbsp;</i>Twitter
-    </a>
     <a class="link" href="https://www.instagram.com/markkop.dev" target="_blank">
       <i class="fab fa-instagram">&nbsp;</i>Instagram
     </a>
