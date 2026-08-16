@@ -39,6 +39,9 @@
   </div>
 
   <div id="links" class="max-w-3xl mx-auto my-7 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+    <a class="link" href="https://markkop.dev" target="_blank">
+      <i class="fas fa-home">&nbsp;</i>Website
+    </a>
     <a class="link" href="https://github.com/markkop" target="_blank">
       <i class="fab fa-github">&nbsp;</i>Github
     </a>
